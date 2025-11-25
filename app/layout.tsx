@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "HORIZONTETECH SpA",
     images: [
       {
-        url: "/favicon.png",
+        url: "https://www.horizoninvest.cl/favicon.png",
       },
     ],
     type: "website",
