@@ -113,7 +113,7 @@ export default function Footer() {
         <div
           className={cn(
             "fixed left-0 top-20 bg-[rgba(255,255,255,0.85)] backdrop-blur-xs z-19 w-full px-5",
-            "transition-all duration-300 ",
+            "transition-all duration-300 lg:hidden ",
             `${open ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`
           )}
         >

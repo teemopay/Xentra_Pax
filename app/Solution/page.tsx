@@ -5,7 +5,6 @@ import { SplitText } from "gsap/SplitText";
 import { MainPage } from "@/components/Page";
 import Contact from "@/components/Concat";
 import SkeletonImage from "@/components/SkeletonImage";
-import { useSearchParams } from "next/navigation";
 
 const nav = [
   {
@@ -26,13 +25,14 @@ const nav = [
   },
 ];
 export default function Case() {
-  const searchParams = useSearchParams();
-  const type = searchParams.get("type");
-  const initialActive = type ? Number(type) : 0;
-  const [active, setActive] = useState(initialActive);
+  const [active, setActive] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const [lineStyle, setLineStyle] = useState({ left: 0, width: 0 });
   useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const type = searchParams.get("type");
+    const initialActive = type ? Number(type) : 0;
+    setActive(initialActive);
     gsap.registerPlugin(SplitText);
     gsap.set(".SplitAnimation", { opacity: 1 });
     let tl = gsap.timeline();

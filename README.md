@@ -11,7 +11,7 @@ nextjs + tailwindcss
 ## node 版本要求
 
 ```
-Node.js 20 or later.
+Node.js >=20.9.0 or later.
 ```
 
 ## 安装依赖
