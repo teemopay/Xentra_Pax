@@ -17,6 +17,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "HORIZONTETECH SpA ",
   description: "HORIZONTETECH SpA ",
+  openGraph: {
+    title: "HORIZONTETECH SpA ",
+    description: "HORIZONTETECH SpA ",
+    siteName: "HORIZONTETECH SpA",
+    images: [
+      {
+        url: "/favicon.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
