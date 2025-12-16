@@ -11,9 +11,9 @@ export default function About() {
     numbers: "",
   });
   const inputStyle =
-    "w-full px-[30px] py-2 rounded-[10px]  focus:outline-none border border-gray-300  text-[#000B33] text-[16px]   transition focus:border-[#2B59FF]";
+    "w-full px-[30px] py-3 rounded-[10px]  focus:outline-none border border-[#2B59FF]  text-[#000B33] text-[20px]   transition";
   const lableStyle =
-    "text-[16px] md:text-[20px] text-[#000B33] mb-[6px] md:mb-2";
+    "text-[16px] md:text-[20px] text-[#000B33] mb-[6px] md:mb-[12px]";
   const counts = ["0-100", "100-200", "200-500", "500-1000", "Más de 1000"];
   const work = [
     "Finanzas",
@@ -45,12 +45,12 @@ export default function About() {
     }
   };
   return (
-    <div className="overflow-hidden pt-20 min-h-screen px-5 md:px-[60px] pb-[100px]  bg-[url('/about.png')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
-      <div className="slide-from-top max-w-[856px] mt-[126px]   w-full  bg-white backdrop-blur-xs px-[18px] md:px-[110px] py-10 rounded-[10px] ">
-        <div className="text-center text-[30px] md:text-[58px] font-bold mb-2.5">
+    <div className="overflow-hidden pt-20  px-5 md:px-[60px] pb-[125px] flex items-center justify-center">
+      <div className="slide-from-top max-w-[748px] mt-[95px]   w-full  bg-white backdrop-blur-xs ">
+        <div className="text-center text-[30px] md:text-[72px] font-bold mb-2.5 text-[#000000]">
           Contáctenos
         </div>
-        <div className="text-center text-[16px] mb-9">
+        <div className="text-center text-[16px] mb-9 text-[#041D34]">
           Deje su información para que nuestro gerente de clientes pueda ponerse
           en contacto con usted lo antes posible.
         </div>
@@ -109,7 +109,7 @@ export default function About() {
         </div>
         <div
           onClick={submit}
-          className="h-[50px] text-[16px] bg-[#FF922B] text-white w-[227px] rounded-full flex items-center justify-center cursor-pointer mx-auto"
+          className="h-[50px] btn-bg-gradient text-[16px] bg-[#FF922B] text-white w-[227px] rounded-full flex items-center justify-center cursor-pointer mx-auto"
         >
           Enviar
         </div>

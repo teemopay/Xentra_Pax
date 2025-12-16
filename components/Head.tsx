@@ -12,11 +12,19 @@ console.clear();
 const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
 const navList = [
   {
-    name: "Productos y Servicios",
+    name: "Inicio",
+    href: "/",
+  },
+  {
+    name: "Soluciones de Tecnología",
     href: "/Solution",
   },
   {
-    name: "Contáctanos",
+    name: "Soporte Tenico",
+    href: "/Support",
+  },
+  {
+    name: "Contacto y Soporte",
     href: "/About",
   },
 ];
@@ -42,11 +50,11 @@ export default function Footer() {
     tl.reversed(true);
   };
   return (
-    <div className="fixed inset-0 h-20 bg-[rgba(255,255,255,0.85)] backdrop-blur-xs flex  items-center z-20 ">
+    <div className="fixed inset-0 h-[84px] bg-[rgba(255,255,255,0.85)] backdrop-blur-xs flex  items-center z-20 border-b border-[#D4D4E6]">
       <MainPage className="flex-1">
         <div className="flex justify-between items-center">
           <Link className="mr-5" href="/">
-            <SkeletonImage src="/logo.png" alt="logo" width={316} height={46} />
+            <SkeletonImage src="/logo.png" alt="logo" width={236} height={26} />
           </Link>
           <div className="flex-1 ">
             <div className="hidden lg:flex items-center justify-end">
@@ -54,13 +62,11 @@ export default function Footer() {
                 return (
                   <Link
                     key={index}
-                    className={`text-[16px]  relative block h-20 leading-20 mr-5 last:mr-0 xl:mr-12 
-            cursor-pointer hover:text-[#FF922B] 
-             underline-expand ${
-               pathname === i.href
-                 ? "text-[#FF922B] underline-active"
-                 : "text-[#333] hover:text-[#FF922B]"
-             }`}
+                    className={`text-[16px]  relative block   mr-5 last:mr-0 xl:mr-12 
+            cursor-pointer hover:text-[#3E9BFF] 
+ ${
+   pathname === i.href ? "text-[#3E9BFF]" : "text-[#333] hover:text-[#3E9BFF]"
+ }`}
                     href={i.href}
                   >
                     {i.name}

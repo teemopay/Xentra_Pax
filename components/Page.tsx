@@ -8,13 +8,10 @@ export const MainPage = ({
   className?: string;
 }) => {
   return (
-    <div
-      className={cn(
-        "relative max-w-[1400px]  mx-auto px-5 md:px-[60px]",
-        className
-      )}
-    >
-      {children}
+    <div className="px-5 md:px-[60px] mx-auto w-full">
+      <div className={cn("relative max-w-[1200px] mx-auto", className)}>
+        {children}
+      </div>
     </div>
   );
 };

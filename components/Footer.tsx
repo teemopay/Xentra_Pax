@@ -5,20 +5,24 @@ import { MainPage } from "@/components/Page";
 import SkeletonImage from "@/components/SkeletonImage";
 const list = [
   {
-    title: "Productos y Servicios",
+    title: "Presentación de la Empresa",
     children: [
       {
-        href: "/Solution?type=0",
-        name: "Planificación de Asignación de Activos",
+        href: "/About",
+        name: "Contacto de Colaboración",
       },
     ],
   },
   {
-    title: "Introducción de la Empresa",
+    title: "Alcance del Servicio",
     children: [
       {
-        href: "/About",
-        name: "Contáctanos",
+        href: "/Solution",
+        name: "Soluciones de Productos",
+      },
+      {
+        href: "/Support",
+        name: "Soporte Tenico",
       },
     ],
   },
@@ -26,37 +30,37 @@ const list = [
 export default function Footer() {
   useEffect(() => {}, []);
   return (
-    <div className=" bg-[#050F19] text-[#FFFFFF]">
+    <div className="bg-[#14171E] text-[#FFFFFF]">
       <MainPage>
-        <div className="pt-[45px] pb-[70px] grid grid-cols-1 lg:grid-cols-4 gap-x-20">
+        <div className="pt-[93px] pb-20 grid grid-cols-1 lg:grid-cols-4 gap-x-20 cursor-pointer">
           <div className="mb-3 lg:mb-0 cursor-pointer md:col-span-2">
             <Link href="/">
               <SkeletonImage
                 src="/logo-2.png"
                 alt="logo"
-                width={316}
-                height={46}
+                width={236}
+                height={26}
               />
             </Link>
-            <div className="text-[14px] mt-[30px] text-white mb-[15px] hover:text-[#FF922B]">
-              Dirección de la compañía: HUÉRFANOS 1178, OF. 224 / 226 / 228 /
-              230, Santiago, Chile
-            </div>
-            <div className="text-[14px] text-white mb-[15px] hover:text-[#FF922B]">
-              Correo electrónico de la compañía: operador@horizoninvest.cl
-            </div>
-            <div className="text-[14px]  text-white hover:text-[#FF922B]">
-              Horario de trabajo: 9:30am – 18:30pm
+            <Link
+              href="mailto:bd@xentrapax.com "
+              className="text-[14px] mt-[38px] text-white mb-[15px] hover:text-[#3E9BFF] block"
+            >
+              Correo electrónico de la compañía:{" "}
+              <span className="font-bold">bd@xentrapax.com </span>
+            </Link>
+            <div className="text-[14px]  text-white  hover:text-[#3E9BFF]">
+              Horario de trabajo: 9:30am - 18:30pm
             </div>
           </div>
           {list.map((i, index) => {
             return (
               <div key={index} className="mt-5 lg:mt-0">
-                <div className="mb-6">{i.title}</div>
+                <div className="mb-6 font-bold">{i.title}</div>
                 {i.children.map((s, sIndex) => {
                   return (
                     <Link
-                      className="block mb-3 text-[12px] hover:text-[#FF922B] cursor-pointer"
+                      className="block mb-3 text-[12px] hover:text-[#3E9BFF] cursor-pointer"
                       href={s.href}
                       key={sIndex}
                     >
@@ -68,8 +72,8 @@ export default function Footer() {
             );
           })}
         </div>
-        <div className="pt-[38px] pb-11  border-t-[#FFF5EE]  border-t-[0.5px] text-center text-[14px] text-[rgba(255,255,255,0.48)]">
-          Copyright © 2025 HORIZONTETECH SpA
+        <div className="pt-[30px] pb-20  border-t-[rgba(255,255,255,0.2)]  border-t-[0.5px] text-center text-[14px] text-[rgba(255,255,255,0.48)]">
+          Copyright © 2025 Xentra Pax
         </div>
       </MainPage>
     </div>

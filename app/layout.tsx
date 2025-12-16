@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HORIZONTETECH SpA ",
-  description: "HORIZONTETECH SpA ",
+  title: "Xentra Pax ",
+  description: "Xentra Pax ",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "HORIZONTETECH SpA ",
-    description: "HORIZONTETECH SpA ",
-    siteName: "HORIZONTETECH SpA",
+    title: "Xentra Pax ",
+    description: "Xentra Pax ",
+    siteName: "Xentra Pax",
     images: [
       {
         url: "https://www.horizoninvest.cl/favicon.png",
@@ -44,8 +44,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Head />
+        <div className="h-[84px] bg-white"></div>
         {children}
-        {/* 公共footer */}
         <Footer />
       </body>
     </html>

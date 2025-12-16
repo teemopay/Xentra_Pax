@@ -63,7 +63,7 @@ export async function POST(request: Request) {
         content: {
           post: {
             zh_cn: {
-              title: "【HORIZONTETECH SpA】官网留言:",
+              title: "【Xentra Pax】官网留言:",
               content: params,
             },
           },
