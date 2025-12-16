@@ -102,7 +102,7 @@ export const Servicios = () => {
               operativa.
             </div>
             <Link
-              href="/About"
+              href="/Solution"
               className="titleAnimate btn-bg-gradient  relative h-14 mx-auto  font-bold md:w-[368px] max-w-[368px] flex items-center justify-center rounded-full text-white text-[14px] md:text-[16px]"
             >
               Explorar nuestras soluciones técnicas
