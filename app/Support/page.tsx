@@ -69,7 +69,7 @@ export default function Solution() {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        stagger: 0.6,
+        stagger: 0.3,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: ".second-card-wrap",
@@ -80,7 +80,7 @@ export default function Solution() {
     );
   }, []);
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Servicios />
       <SecondItem />
       <ThreeItem />

@@ -143,7 +143,7 @@ export const SecondItem = () => {
           className="scrollText mb-[106px]"
           title="Tenga la seguridad de: La garantía técnica y el compromiso de cumplimiento de Xentra Pax."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[51px]">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-[51px]">
           {list.map((i, index) => {
             const Icon = i.icon;
             return (

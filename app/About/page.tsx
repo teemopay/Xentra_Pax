@@ -45,8 +45,8 @@ export default function About() {
     }
   };
   return (
-    <div className="overflow-hidden pt-20  px-5 md:px-[60px] pb-[125px] flex items-center justify-center">
-      <div className="slide-from-top max-w-[748px] mt-[95px]   w-full  bg-white backdrop-blur-xs ">
+    <div className="overflow-hidden  px-5 md:px-[60px] pb-[125px] flex items-center justify-center">
+      <div className="slide-from-top max-w-[748px] mt-10 lg:mt-[95px]   w-full  bg-white backdrop-blur-xs ">
         <div className="text-center text-[30px] md:text-[72px] font-bold mb-2.5 text-[#000000]">
           Contáctenos
         </div>

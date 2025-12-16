@@ -59,7 +59,7 @@ export default function Solution() {
 }
 export const Servicios = () => {
   return (
-    <div className="relative">
+    <div className="relative ">
       <SkeletonImage
         pclass="rounded-none"
         src="/5.png"
@@ -152,7 +152,7 @@ export const ThreeItem = () => {
     },
   ];
   return (
-    <div className="pt-[120px] pb-[184px] bg-white">
+    <div className="pt-[120px] pb-[184px] bg-white ">
       <MainPage>
         <Title
           className="mb-[82px] tracking-tighter"
@@ -165,7 +165,7 @@ export const ThreeItem = () => {
             alt="logo"
             width={461}
             height={461}
-            className="mx-auto lg:mx-0 card-img-scacel-img"
+            className="mx-auto lg:mx-0 card-img-scacel-img "
           />
           <div className="flex-1 2xl:max-w-[528px]">
             {list.map((i, index) => {
@@ -200,7 +200,13 @@ export const FourItem = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[63px] cursor-pointer">
           <div className="relative">
-            <SkeletonImage src="/6.png" alt="logo" width={570} height={451} />
+            <SkeletonImage
+              src="/6.png"
+              alt="logo"
+              width={570}
+              height={451}
+              className="w-full"
+            />
             <div className="absolute inset-0 z-2 w-full h-full">
               <div className="commen-transition solution-y px-5 py-3 md:px-[46px] md:py-[30px] flex flex-col justify-end h-full">
                 <div className="text-[18px] md:text-[20px] text-white md:leading-[30px] mb-4 font-semibold">
