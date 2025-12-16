@@ -1,6 +1,6 @@
 ## 项目介绍
 
-HORIZONTETECH SpA 官 网
+Xentra_Pax 官 网
 
 ## 技术栈
 
