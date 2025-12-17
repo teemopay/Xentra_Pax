@@ -264,6 +264,13 @@ export const FourItem = () => {
           title="Nuestro equipo de consultoría técnica está listo para diseñar la mejor solución de transacciones digitales para usted.
  "
         />
+        <SkeletonImage
+          src="/13.png"
+          alt="logo"
+          width={239}
+          height={44}
+          className="mx-auto mb-[88px]"
+        />
         <div className="relative cursor-pointer">
           <SkeletonImage
             src="/12.png"
