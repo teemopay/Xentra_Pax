@@ -9,7 +9,7 @@ const list = [
     children: [
       {
         href: "/About",
-        name: "Contacto de Colaboración",
+        name: "Contacto y Soporte",
       },
     ],
   },
@@ -18,7 +18,7 @@ const list = [
     children: [
       {
         href: "/Solution",
-        name: "Soluciones de Productos",
+        name: "Soluciones de Tecnología",
       },
       {
         href: "/Support",
