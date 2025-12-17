@@ -97,9 +97,8 @@ export const Servicios = () => {
               el crecimiento empresarial local
             </div>
             <div className="titleAnimate text-[14px] md:text-[18px] text-white text-center mb-[81px] max-w-[927px] mx-auto">
-              Tecnología SaaS ofrecida por Xentra Pax. No tocamos los fondos,
-              solo aceleramos el flujo de efectivo comercial y la eficiencia
-              operativa.
+              Tecnología SaaS ofrecida por Xentra Pax. aceleramos el flujo de
+              efectivo comercial y la eficiencia operativa.
             </div>
             <Link
               href="/Solution"
